@@ -9,11 +9,10 @@
 :root {
     --black: #000;
     --white: #fff;
-    --bodybg: #F1F1F1;
+    --bodybg: #f5f5f5;
     --cardbg: #E1E1E1;
     --spambg: #323232;
-    --font1: 'Montserrat-Regular';
-    --font2: 'Montserrat-Bold';
+    --font: 'Montserrat';
 }
 
 ul {
@@ -22,6 +21,46 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bodybg);
+}
+
+.title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+
+}
+
+.main__title-span {
+    height: 2px;
+    background: #323232;
+    border-radius: 0.5px;
+    position: absolute;
+    width: 100%;
+    top: 57px;
+}
+
+.desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--spambg);
+}
+
+.desc_bold {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--black);
 }
 
 .header__nav .container {
@@ -61,4 +100,193 @@ a {
     display: block;
     width: 87%;
     bottom: 0;
+}
+
+.main__cards {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__card {
+    display: flex;
+    width: 526px;
+    min-height: 300px;
+    background: var(--cardbg);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin-bottom: 30px;
+    filter: drop-shadow(6px 6px 15px rgba(132, 132, 132, 0.3));
+}
+
+.main__card2 {
+    display: flex;
+    width: 746px;
+    min-height: 618px;
+    background: var(--cardbg);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin-bottom: 30px;
+    filter: drop-shadow(6px 6px 15px rgba(132, 132, 132, 0.3));
+}
+
+.main__sells {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.main__title {
+    margin-bottom: 40px;
+    color: var(--black);
+}
+
+.main__card2 {
+    column-gap: 12px;
+}
+
+.main__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+}
+
+.main__span {
+    width: 123px;
+    height: 49px;
+    background: var(--spambg);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: var(--white);
+    border-radius: 10px;
+    position: absolute;
+    top: 16px;
+    left: 22px;
+}
+
+.main__cards2-card {
+    width: 416px;
+    min-height: 485px;
+    flex-direction: column;
+    padding: 72px 0 40px;
+}
+
+.main__text2 {
+    margin-top: 20px;
+}
+
+.main2__span {
+    background: var(--white);
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__card span:nth-child(5) {
+    top: 90px;
+}
+
+.main__cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    margin-bottom: 60px;
+}
+
+.main__other {
+    color: var(--spambg);
+    margin-bottom: 60px;
+}
+
+.main__news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__news-block {
+    width: 636px;
+    height: 470px;
+    background: url(../img/Main3_1.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 110px 0 0 60px;
+    position: relative;
+}
+
+.main3__desk {
+    max-width: 466px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.main3__text {
+    max-width: 462px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--cardbg);
+    margin-bottom: 100px;
+}
+
+.main__date-number {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.main__date {
+    display: flex;
+    column-gap: 10px;
+}
+
+.main3__span {
+    width: 150px;
+    height: 50px;
+    padding: 13px 0;
+    background: var(--white);
+    position: absolute;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    left: 20px;
+}
+
+.second {
+    background: url(../img/Main3_2.jpg);
+}
+
+.main3__box {
+    display: flex;
+    column-gap: 24px;
 }
